@@ -27,17 +27,18 @@ The model was trained for 34 epochs, achieving a final validation Dice Coefficie
 ## Example Results
 The table below, shows the values of the metrics used, during each Epoch, and the training
 process lasted about 4 hours:
+
 <img width="358" alt="table" src="https://github.com/Emanuele1202/Image-segmentation-using-U-NET/assets/100868959/110414fa-86a8-42d1-a243-0d23c4fec138">
 
 
 This training results show a gradual improvement in both the training and validation
 metrics over the epochs, in fact:
-• Loss and Dice Coefficient Trends: The training loss is decreasing, and the dice coefficient is gradually increasing, indicating that the model is learning to better fit the
+- Loss and Dice Coefficient Trends: The training loss is decreasing, and the dice coefficient is gradually increasing, indicating that the model is learning to better fit the
 training data. The validation loss and dice coefficient on the validation set also show
 improvement, which is a positive sign.
-• Early Stopping was triggered after 34 epochs, as there was no significant improvement
+- Early Stopping was triggered after 34 epochs, as there was no significant improvement
 in the validation loss. This is mainly used to prevent overfitting.
-• The final validation Dice Coefficient is 0.5998, which suggests that the model is performing reasonably well, indeed it means that we have an overlap of approximately
+- The final validation Dice Coefficient is 0.5998, which suggests that the model is performing reasonably well, indeed it means that we have an overlap of approximately
 60% between the train image and the train mask.
 Regarding the predicted mask, which basically is our main focus, I am reporting here
 just few outputs results:
